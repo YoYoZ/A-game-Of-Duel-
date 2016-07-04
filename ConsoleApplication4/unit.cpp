@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 struct ability
 {
@@ -23,6 +24,7 @@ class unit
 {
 public:
 	bool isPlayer;
+	char *name;
 	int health;
 	int armor;
 	int meleeDMG;
@@ -31,7 +33,7 @@ public:
 	int mana;
 	ability *skills[numberOfAbilites];
 
-	unit(int t_health, int t_meleeDMG, int t_rangeDMG, int t_agility, int  armor, int mana)
+	unit(int t_health, int t_meleeDMG, int t_rangeDMG, int t_agility, int  armor, int mana, char *name)
 	{
 		health = t_health;
 		meleeDMG = t_meleeDMG;
@@ -39,6 +41,7 @@ public:
 		agility = t_agility;
 		this->armor = armor;
 		this->mana = mana;
+		this->name = name;
 	}
 	void attackMelee(unit *enemy)
 	{

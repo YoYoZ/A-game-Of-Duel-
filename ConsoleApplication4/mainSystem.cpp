@@ -1,38 +1,47 @@
 #include <iostream>
-#include "unit.cpp"
+#include "Classes.cpp"
+
 #define VERSION 0.1
+#define numberOfAbilites  3
 using namespace std;
 
 
-bool beginGame()
+unit *beginGame(unit possibleHumans[3])
 {
+	int i = 0;
 	cout << "Hello, and welcome to game of duel v" << VERSION << endl;
-	cout << "Please, make your choice: 0 for magician, 1 for warrior" << endl;
-	bool res;
+	cout << "Please, make your choice:"<<endl;
+	for each (unit s in possibleHumans)
+	{
+		cout <<  i << ": to select " << s.name << endl;
+		i++;
+	}
+	int res;
 	cin >> res;
-	return res;
+	return &possibleHumans[res];
 }
-int aiTurn(unit you)
+int aiTurn(unit *you)
 {
 	int bestOption = 0;
 	int prevDMG = 0;
-	for (int i = 0; i < 2; i++)
+	for (int i = 0; i < numberOfAbilites; i++)
 	{
-		if (you.skills[i]->curCooldown == 0 && you.skills[i]->dmg>prevDMG)
+		if (you->skills[i]->curCooldown == 0 && you->skills[i]->dmg>prevDMG)
 		{
-			prevDMG = you.skills[i]->dmg;
-			bestOption = i;
+			prevDMG = you->skills[i]->dmg;
+			bestOption = i+3;
 		}
 	}
 	if (bestOption != 0)
 		return bestOption;
-	if (you.rangeDMG > you.meleeDMG)
-		return 1;
+	if (you->rangeDMG > you->meleeDMG)
+		return attackRanged;
 	else
-		return 0;
+		return attackMelee;
 }
 bool performTurn(unit *you, unit *enemy, int answer = 0)
 {
+	canDo c = (canDo)answer;
 	switch (answer)
 	{
 	case 1:
@@ -66,7 +75,6 @@ bool gameTick(unit *you, unit *enemy, int *turnCount)
 		cout << "You lost!" << endl;
 		return false;
 	}
-	canDo c;
 	cout << *turnCount << " turn begins." << endl;
 	cout << "You have " << you->health << " HP, "<<you->mana<<" MP." << endl;
 	cout << "Enemy has " << enemy->health << " HP, " << enemy->mana << " MP." << endl;
@@ -79,47 +87,26 @@ bool gameTick(unit *you, unit *enemy, int *turnCount)
 	int answer;
 	cin >> answer;
 	performTurn(you, enemy, answer);
-	performTurn(enemy, you, aiTurn(*enemy));
+	performTurn(enemy, you, aiTurn(enemy));
 	*turnCount += 1;
 	return true;
 }
 
 
-class magician : public unit
-{
-public:
-	magician(): unit(100, 5, 10, 4, 2, 150)
-	{
-		skills[0] = new ability("Fireball", 30, 10, 5, "A horrible fire falls on their heads!"); 
-		skills[1] = new ability("Ice Shard", 40, 25, 8, "Your enemy turns into freaking ICE SHARD!"); 
-		skills[2] = new ability("Whoosh", 3, 5, 1, "Something blows on your enemy!");
-	}
 
-};
-class warrior : public unit
-{
-public:
-	//From my p*nis
-	warrior() : unit(100, 15, 3, 7, 6, 50)
-	{
-		skills[0] = new ability("Dash", 10, 10, 5,"YOU DASH!");
-		skills[1] = new ability("Double Dash", 20, 25, 8, "YOU DASH HARDER!");
-		skills[2] = new ability("Tripple Dash", 30, 40, 13, "YOU DASH THE DASHEST POSSIBLE");
-	}
-};
 
 void main()
 {
 	int turnCount = 1;
 	int *turn =  &turnCount;
+
 	magician mp;
 	warrior wr;
-	bool selectedPlayer = beginGame();
+	orc oc;
+	unit possibleHumans[3] = { mp, wr, oc };
+	unit *selectedPlayer = beginGame(possibleHumans);
 	bool gameRuns = true;
 	while (gameRuns)
-		if (!selectedPlayer)
-			gameRuns = gameTick(&mp, &wr, turn);
-		else
-			gameRuns = gameTick(&wr, &mp, turn);
+		gameRuns  = gameTick(selectedPlayer, &wr, turn);
 	system("PAUSE");
 }

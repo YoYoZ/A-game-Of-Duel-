@@ -1,5 +1,90 @@
-﻿  unit.cpp
-  mainSystem.cpp
-c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\mainsystem.cpp(69): warning C4101: 'c': unreferenced local variable
-  Generating Code...
-  ConsoleApplication4.vcxproj -> C:\Users\Anton\Documents\Visual Studio 2015\Projects\ConsoleApplication4\Debug\ConsoleApplication4.exe
+﻿  mainSystem.cpp
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\unit.cpp(5): error C2011: 'ability': 'struct' type redefinition
+  c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\unit.cpp(5): note: see declaration of 'ability'
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\unit.cpp(24): error C2011: 'unit': 'class' type redefinition
+  c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\unit.cpp(24): note: see declaration of 'unit'
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\unit.cpp(74): error C2011: 'canDo': 'enum' type redefinition
+  c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\unit.cpp(74): note: see declaration of 'canDo'
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\classes.cpp(3): error C2504: 'unit': base class undefined
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\classes.cpp(6): error C2614: 'magician': illegal member initialization: 'unit' is not a base or member
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\classes.cpp(7): error C2065: 'skills': undeclared identifier
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\classes.cpp(7): error C2027: use of undefined type 'ability'
+  c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\unit.cpp(5): note: see declaration of 'ability'
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\classes.cpp(7): error C2227: left of '->{ctor}' must point to class/struct/union/generic type
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\classes.cpp(8): error C2065: 'skills': undeclared identifier
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\classes.cpp(8): error C2027: use of undefined type 'ability'
+  c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\unit.cpp(5): note: see declaration of 'ability'
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\classes.cpp(8): error C2227: left of '->{ctor}' must point to class/struct/union/generic type
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\classes.cpp(9): error C2065: 'skills': undeclared identifier
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\classes.cpp(9): error C2027: use of undefined type 'ability'
+  c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\unit.cpp(5): note: see declaration of 'ability'
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\classes.cpp(9): error C2227: left of '->{ctor}' must point to class/struct/union/generic type
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\classes.cpp(14): error C2504: 'unit': base class undefined
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\classes.cpp(18): error C2614: 'warrior': illegal member initialization: 'unit' is not a base or member
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\classes.cpp(19): error C2065: 'skills': undeclared identifier
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\classes.cpp(19): error C2027: use of undefined type 'ability'
+  c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\unit.cpp(5): note: see declaration of 'ability'
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\classes.cpp(19): error C2227: left of '->{ctor}' must point to class/struct/union/generic type
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\classes.cpp(20): error C2065: 'skills': undeclared identifier
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\classes.cpp(20): error C2027: use of undefined type 'ability'
+  c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\unit.cpp(5): note: see declaration of 'ability'
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\classes.cpp(20): error C2227: left of '->{ctor}' must point to class/struct/union/generic type
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\classes.cpp(21): error C2065: 'skills': undeclared identifier
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\classes.cpp(21): error C2027: use of undefined type 'ability'
+  c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\unit.cpp(5): note: see declaration of 'ability'
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\classes.cpp(21): error C2227: left of '->{ctor}' must point to class/struct/union/generic type
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\mainsystem.cpp(23): error C2027: use of undefined type 'unit'
+  c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\unit.cpp(24): note: see declaration of 'unit'
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\mainsystem.cpp(23): error C2228: left of '.skills' must have class/struct/union
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\mainsystem.cpp(23): error C2227: left of '->curCooldown' must point to class/struct/union/generic type
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\mainsystem.cpp(23): error C2227: left of '->dmg' must point to class/struct/union/generic type
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\mainsystem.cpp(25): error C2027: use of undefined type 'unit'
+  c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\unit.cpp(24): note: see declaration of 'unit'
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\mainsystem.cpp(25): error C2228: left of '.skills' must have class/struct/union
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\mainsystem.cpp(25): error C2227: left of '->dmg' must point to class/struct/union/generic type
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\mainsystem.cpp(31): error C2027: use of undefined type 'unit'
+  c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\unit.cpp(24): note: see declaration of 'unit'
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\mainsystem.cpp(31): error C2228: left of '.rangeDMG' must have class/struct/union
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\mainsystem.cpp(31): error C2228: left of '.meleeDMG' must have class/struct/union
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\mainsystem.cpp(42): error C2027: use of undefined type 'unit'
+  c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\unit.cpp(24): note: see declaration of 'unit'
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\mainsystem.cpp(42): error C2227: left of '->attackMelee' must point to class/struct/union/generic type
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\mainsystem.cpp(45): error C2027: use of undefined type 'unit'
+  c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\unit.cpp(24): note: see declaration of 'unit'
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\mainsystem.cpp(45): error C2227: left of '->attackRanged' must point to class/struct/union/generic type
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\mainsystem.cpp(50): error C2027: use of undefined type 'unit'
+  c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\unit.cpp(24): note: see declaration of 'unit'
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\mainsystem.cpp(50): error C2227: left of '->useAbility' must point to class/struct/union/generic type
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\mainsystem.cpp(50): error C2227: left of '->skills' must point to class/struct/union/generic type
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\mainsystem.cpp(62): error C2027: use of undefined type 'unit'
+  c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\unit.cpp(24): note: see declaration of 'unit'
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\mainsystem.cpp(62): error C2227: left of '->health' must point to class/struct/union/generic type
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\mainsystem.cpp(67): error C2027: use of undefined type 'unit'
+  c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\unit.cpp(24): note: see declaration of 'unit'
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\mainsystem.cpp(67): error C2227: left of '->health' must point to class/struct/union/generic type
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\mainsystem.cpp(73): error C2027: use of undefined type 'unit'
+  c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\unit.cpp(24): note: see declaration of 'unit'
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\mainsystem.cpp(73): error C2227: left of '->health' must point to class/struct/union/generic type
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\mainsystem.cpp(73): error C2227: left of '->mana' must point to class/struct/union/generic type
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\mainsystem.cpp(74): error C2027: use of undefined type 'unit'
+  c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\unit.cpp(24): note: see declaration of 'unit'
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\mainsystem.cpp(74): error C2227: left of '->health' must point to class/struct/union/generic type
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\mainsystem.cpp(74): error C2227: left of '->mana' must point to class/struct/union/generic type
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\mainsystem.cpp(78): error C2027: use of undefined type 'unit'
+  c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\unit.cpp(24): note: see declaration of 'unit'
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\mainsystem.cpp(78): error C2227: left of '->skills' must point to class/struct/union/generic type
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\mainsystem.cpp(78): error C2227: left of '->name' must point to class/struct/union/generic type
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\mainsystem.cpp(79): error C2027: use of undefined type 'unit'
+  c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\unit.cpp(24): note: see declaration of 'unit'
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\mainsystem.cpp(79): error C2227: left of '->skills' must point to class/struct/union/generic type
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\mainsystem.cpp(79): error C2227: left of '->name' must point to class/struct/union/generic type
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\mainsystem.cpp(80): error C2027: use of undefined type 'unit'
+  c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\unit.cpp(24): note: see declaration of 'unit'
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\mainsystem.cpp(80): error C2227: left of '->skills' must point to class/struct/union/generic type
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\mainsystem.cpp(80): error C2227: left of '->name' must point to class/struct/union/generic type
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\mainsystem.cpp(84): error C2664: 'int aiTurn(unit)': cannot convert argument 1 from 'unit' to 'unit'
+  c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\mainsystem.cpp(84): note: Source or target has incomplete type
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\mainsystem.cpp(102): error C2664: 'bool gameTick(unit *,unit *,int *)': cannot convert argument 1 from 'magician *' to 'unit *'
+  c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\mainsystem.cpp(102): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\mainsystem.cpp(104): error C2664: 'bool gameTick(unit *,unit *,int *)': cannot convert argument 1 from 'warrior *' to 'unit *'
+  c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\mainsystem.cpp(104): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
