@@ -1,0 +1,5 @@
+﻿  unit.cpp
+  mainSystem.cpp
+c:\users\anton\documents\visual studio 2015\projects\consoleapplication4\consoleapplication4\mainsystem.cpp(69): warning C4101: 'c': unreferenced local variable
+  Generating Code...
+  ConsoleApplication4.vcxproj -> C:\Users\Anton\Documents\Visual Studio 2015\Projects\ConsoleApplication4\Debug\ConsoleApplication4.exe

@@ -1,0 +1,10 @@
+﻿  mainSystem.cpp
+mainSystem.cpp(43): warning C4930: 'warrior wr(void)': prototyped function not called (was a variable definition intended?)
+mainSystem.cpp(42): warning C4930: 'magician mp(void)': prototyped function not called (was a variable definition intended?)
+  unit.cpp
+  Generating code
+  12 of 12 functions (100.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  ConsoleApplication4.vcxproj -> C:\Users\Anton\Documents\Visual Studio 2015\Projects\ConsoleApplication4\x64\Release\ConsoleApplication4.exe
